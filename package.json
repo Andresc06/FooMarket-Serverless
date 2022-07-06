@@ -1,0 +1,23 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "link-module-alias",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "link-module-alias": "^1.2.0",
+    "mongodb": "^4.7.0"
+  },
+  "_moduleAliases": {
+    "~utils": "./utils/utils.js",
+    "~db": "./config/database.js",
+    "~ins": "config/instance.js"
+  }
+}
